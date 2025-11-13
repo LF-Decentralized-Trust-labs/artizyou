@@ -1,0 +1,48 @@
+h2{
+  margin: 4rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #000;
+  text-transform: none;
+  text-align: center;
+
+  @media (min-width: 768px){
+    font-size: 1.25rem;
+  }
+}
+
+h3{
+  font-size: 1.3rem;
+  @include media-breakpoint-up(sm) {
+    font-size: 1.75rem;
+  }
+}
+
+h5{
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+a{
+  color: $link-color;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.2s;
+  &:hover{
+    color: $link-color;
+    text-decoration: underline;
+  }
+}
+p{
+  line-height: 1.50em;
+}
+ul{
+  padding-left: 21px;
+}
+li{
+  margin-bottom: 0.5rem;
+}
+ol li{
+  list-style: none;
+}

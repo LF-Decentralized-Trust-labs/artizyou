@@ -1,0 +1,41 @@
+<tr class="header">
+  <td>
+    <a href="http://www.artizyou.com">
+      <%= image_tag("mail/logo_artizyou.png", class: "logo") %>
+      <span class="logo-subtitle"><%= t('mailer.header.subtitle').html_safe %></span>
+    </a>
+
+    <h1><%= t('mailer.confirmation_instructions.header.title').html_safe %></h1>
+    <p><%= t('mailer.confirmation_instructions.header.subtitle').html_safe %></p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <br>
+    <br>
+    <p>
+      <%= t('mailer.confirmation_instructions.greeting').html_safe %>
+    </p>
+
+    <p>
+      <%= t('mailer.confirmation_instructions.body_1').html_safe %>
+    </p>
+
+    <p>
+      <%= t('mailer.confirmation_instructions.body_2').html_safe %>
+    </p>
+
+    <p class="button-container"><%= link_to t('mailer.confirmation_instructions.validate_btn'), confirmation_url(@resource, confirmation_token: @token) %></p>
+
+    <p>
+      <%= t('mailer.confirmation_instructions.body_3').html_safe %>
+      <a class="link" href="https://www.artizyou.com/faq.html">www.artizyou.com/faq</a>
+    </p>
+
+    <p>
+      <%= t('mailer.confirmation_instructions.body_4').html_safe %>
+      <a href="mailto:contact@artizyou.com" class="link"><%= t('mailer.confirmation_instructions.footer_link') %></a><br><br>
+      <%= t('mailer.confirmation_instructions.salutations').html_safe %>
+    </p>
+  </td>
+</tr>

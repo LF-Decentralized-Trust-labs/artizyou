@@ -1,0 +1,19 @@
+<div>
+  <% if @date.present? %>
+    <div class="creation-background">
+      <div class="details-container">
+        <div class="scan-heading">
+          b-IP Certificate of the Intellectual property you uploaded to the Artizyou platform
+        </div>
+        <p><span class="scan-heading">Title: </span>&nbsp &nbsp
+          <span class="creation-name"><%= @creation.name&.capitalize %></span></p>
+        <p class="paragraph">
+          The copyright in the work described below was registered with the Artizyou platform on the following date:
+          <span class="creation-name"><%= @date.strftime('%A, %d %B %Y %H:%M:%S') %></span>
+        </p>
+      </div>
+    </div>
+  <% else %>
+    <h1>Invalid QR code</h1>
+  <% end %>
+</div>

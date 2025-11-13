@@ -1,0 +1,38 @@
+.details-container{
+  height: 100vh;
+  width: 50%;
+  margin: auto;
+  padding-top: 20%;
+  @media only screen and (max-width: 1024px) {
+    width: 75%;
+  }
+  @media only screen and (max-width: 786px) {
+    width: 85%;
+  }
+  @media only screen and (max-width: 567px) {
+    width: 90%;
+  }
+}
+
+.creation-background {
+  background-image: image_url('b-IP_artizyou_certificate_bg.jpg');
+  background-size: contain;
+}
+
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+}
+.scan-heading {
+  font-size: 135%;
+  color: goldenrod;
+}
+
+.paragraph{
+  font-size: 1.2rem;
+}
+
+.creation-name{
+  font-size: 135%;
+  font-weight: bold;
+}

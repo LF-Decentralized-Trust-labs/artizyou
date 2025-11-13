@@ -1,0 +1,66 @@
+// https://github.com/tonystar/bootstrap-float-label
+.has-float-label {
+  display: block;
+  position: relative;
+  color: $placeholderTextColor;
+}
+
+.has-float-label label, .has-float-label > span {
+  position: absolute;
+  background: white;
+  color: $currentTextColor;
+  cursor: text;
+  font-size: 85%;
+  opacity: 1;
+  transition: all .2s;
+  top: -.4em;
+  left: .75rem;
+  z-index: 3;
+  line-height: 1;
+  padding: 0 6px
+}
+
+.has-float-label .form-control::placeholder, .form-control::placeholder {
+  opacity: 1;
+  transition: all .2s;
+  color: $placeholderTextColor;
+}
+
+.has-float-label .form-control:placeholder-shown:not(:focus)::placeholder {
+  opacity: 1
+}
+
+.has-float-label .form-control:placeholder-shown:not(:focus) + * {
+  top: 1em;
+  width: 90%;
+  background: white;
+  color: $placeholderTextColor;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 1;
+  text-transform: inherit;
+}
+
+.input-group .has-float-label {
+  flex-grow: 1;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.input-group .has-float-label .form-control {
+  width: 100%;
+  border-radius: .25rem
+}
+
+.input-group .has-float-label:not(:last-child), .input-group .has-float-label:not(:last-child) .form-control {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-right: 0
+}
+
+.input-group .has-float-label:not(:first-child), .input-group .has-float-label:not(:first-child) .form-control {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0
+}

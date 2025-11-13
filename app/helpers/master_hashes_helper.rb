@@ -1,0 +1,2 @@
+module MasterHashesHelper
+end

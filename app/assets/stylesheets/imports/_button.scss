@@ -1,0 +1,105 @@
+.btn + .btn{
+  margin-top: 1rem;
+}
+.btn-primary, .btn-secondary{
+  display: block;
+  position: relative;
+  min-width: 100%;
+  margin: 0 auto;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  border: none;
+  color: #FFF;
+  border-radius: 100px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  @include primary-boxshadow;
+  white-space: normal;
+  transition: all 0.2s ease;
+  z-index: 4;
+  &:hover{
+    @include primary-boxshadow_hover;
+  }
+  @include media-breakpoint-up(sm) {
+    min-width: 220px;
+  }
+}
+.btn-primary{
+  @include primary-color-gradient;
+  &:hover, &:active, &:focus, &:visited{
+    @include primary-color-gradient;
+  }
+
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+.btn-secondary{
+  color: $primary-color-2;
+  background: white;
+  border: solid 1px $primary-color-2;
+  box-shadow: none;
+  display: inline-block;
+  margin-bottom: 15px;
+
+  &:hover, &:active, &:focus, &:visited{
+    border: solid 1px $primary-color-2;
+  }
+
+  &:hover{
+    color: #FFF;
+    background: $primary-color-1;
+    text-decoration: none;
+  }
+}
+.btn-inline{
+  display: inline;
+}
+.btn-sm{
+  min-width: 100%;
+  padding: .35rem 2.5rem;
+  font-size: 1rem;
+  &:hover, &:active, &:focus, &:visited{
+    box-shadow: inherit;
+  }
+  svg{
+    position: relative;
+    bottom: -2px;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+
+  @include media-breakpoint-up(sm) {
+    min-width: 155px;
+  }
+}
+.btn-link{
+  color: #337292;
+  cursor: pointer;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  &:hover, &:active, &:focus, &:visited{
+    color: #337292;
+    text-decoration: none;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.btn-link-nav{
+    display: block;
+    margin: 0 auto;
+    svg{
+      position: relative;
+      bottom: -3px;
+      height: 16px;
+      width: 6px;
+      margin-right: 10px;
+    }
+  }
+}
+.btn-left{
+  margin-left: 0;
+}

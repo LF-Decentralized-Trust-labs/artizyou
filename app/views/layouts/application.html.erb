@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Artizyou</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/Graphisme-Artizyou.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Graphisme-Artizyou.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/Graphisme-Artizyou.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Graphisme-Artizyou.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <%= csrf_meta_tags %>
+
+  <%= yield :sea_otter %>
+
+  <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,500,700" %>
+  <link rel="stylesheet" href="https://unpkg.com/react-select@1.2.1/dist/react-select.css">
+  <%= stylesheet_link_tag('application', media: 'all') %>
+  <%= styled_components_tags %>
+
+  <% if Rails.env.production? && ENV['GOOGLE_TAG_MANAGER_ID'].present? %>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','<%= ENV['GOOGLE_TAG_MANAGER_ID'] %>');</script>
+    <!-- End Google Tag Manager -->
+  <% end %>
+
+  <% if ENV['ENGATI_BOT_KEY'].present? %>
+    <!-- Start of artizyou Chatbot Widget script -->
+    <script>!function(e,t,a){var c=e.head||e.getElementsByTagName("head")[0],n=e.createElement("script");n.async=!0,n.defer=!0, n.type="text/javascript",n.src=t+"/static/js/chat_widget.js?config="+JSON.stringify(a),c.appendChild(n)}(document,"<%= ENV['ENGATI_SERVER_URL'] || 'https://app.engati.com' %>",{bot_key:"<%= ENV['ENGATI_BOT_KEY'] %>",welcome_msg:true,branding_key:"default",server:"<%= ENV['ENGATI_SERVER_URL'] || 'https://app.engati.com' %>",e:"p" });</script>
+    <!-- End of artizyou Chatbot Widget script -->
+  <% end %>
+
+  <% if ENV['HOTJAR_ID'].present? %>
+    <!-- Hotjar Tracking Code for https://app.artizyou.com/ -->
+    <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:<%= ENV['HOTJAR_ID'] %>,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+  <% end %>
+
+</head>
+
+<body>
+
+
+<% if Rails.env.production? && ENV['GOOGLE_TAG_MANAGER_ID'].present? %>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<%= ENV['GOOGLE_TAG_MANAGER_ID'] %>" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+<% end %>
+
+<div id="app"><%= yield %></div>
+
+<%= javascript_include_tag('https://unpkg.com/babel-polyfill@6.26.0/dist/polyfill.min.js') %>
+<%= javascript_include_tag('https://unpkg.com/whatwg-fetch@2.0.3/fetch.js') %>
+<%= javascript_include_tag('https://unpkg.com/intl@1.2.5/dist/Intl.min.js') %>
+<%= javascript_include_tag('https://unpkg.com/react@16.2.0/umd/react.production.min.js') %>
+<%= javascript_include_tag('https://unpkg.com/react-dom@16.2.0/umd/react-dom.production.min.js') %>
+<%= javascript_include_tag('https://js.stripe.com/v3') %>
+<%= react_universal_component_tags %>
+</body>
+<% if ENV['USETIFUL_TOKEN'].present? %>
+<script>
+  (function (w, d, s) {
+    var a = d.getElementsByTagName('head')[0];
+    var r = d.createElement('script');
+    r.async = 1;
+    r.src = s;
+    r.setAttribute('id', 'usetifulScript');
+    r.dataset.token = "<%= ENV['USETIFUL_TOKEN'] %>";
+            a.appendChild(r);
+  })(window, document, "https://www.usetiful.com/dist/usetiful.js");
+</script>
+<% end %>   
+</html>

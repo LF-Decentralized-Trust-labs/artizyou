@@ -1,0 +1,20 @@
+<div class="col-lg-6">
+  <h2 class="devise-title"><%= t("devise.confirmations.new.resend_confirmation_instructions") %></h2>
+
+  <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+    <%= devise_error_messages! %>
+
+    <div class="form-group has-float-label">
+      <%= f.email_field :email, autofocus: true, class:'form-control', placeholder:' ', value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
+      <%= f.label :email %>
+    </div>
+
+    <div class="actions text-center">
+      <%= f.submit t("devise.confirmations.new.resend_confirmation_instructions_short"), class:'btn btn-primary' %>
+    </div>
+  <% end %>
+
+  <div class="devise-links">
+    <%= render "devise/shared/links" %>
+  </div>
+</div>

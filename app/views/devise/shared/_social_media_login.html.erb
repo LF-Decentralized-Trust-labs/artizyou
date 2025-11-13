@@ -1,0 +1,14 @@
+<h2 class="devise-title"><%= t('devise.title_social_media_connect') %></h2>
+
+<div class="social-login-icons">
+  <%- if devise_mapping.omniauthable? %>
+    <%- resource_class.omniauth_providers.each do |provider| %>
+      <% media = OmniAuth::Utils.camelize(provider) %>
+      <% media = media === 'GoogleOauth2' ? 'Google' : media %>
+      <%= link_to ( image_tag("icons/#{media}-simple.svg", alt:"#{media}") + "#{media}"), omniauth_authorize_path(resource_name, provider), class:"btn btn-media btn-media-#{media}", method: :post %>
+    <% end -%>
+  <% end -%>
+  <p class="text-center oauth-text"><%= t('devise.info_social_media_connect') %></p>
+</div>
+
+<div class="choice"><span><%= t('devise.or') %></span></div>
