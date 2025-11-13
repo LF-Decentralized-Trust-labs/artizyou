@@ -1,0 +1,6 @@
+class AddColumnCardIdAndCustomerIdInUser < ActiveRecord::Migration[5.1]
+  def change
+    add_column :users, :card_id, :string, default: nil
+    add_column :users, :customer_id, :string, default: nil
+  end
+end

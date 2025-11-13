@@ -1,0 +1,3 @@
+class CreationOwner < Author
+end
+  

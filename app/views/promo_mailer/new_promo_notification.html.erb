@@ -1,0 +1,58 @@
+<tr class="header">
+  <td>
+    <a href="http://www.artizyou.com">
+      <%= image_tag("mail/logo_artizyou.png", class: "logo") %>
+      <span class="logo-subtitle"><%= t('mailer.header.subtitle').html_safe %></span>
+    </a>
+
+    <h1><%= t('mailer.new_promo.header.title').html_safe %></h1>
+    <p><%= t('mailer.new_promo.header.subtitle').html_safe %></p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <br>
+    <br>
+    <p>
+      <%= t('mailer.new_promo.greeting',fullname: "#{@user.first_name} #{@user.last_name}").html_safe %>
+    </p>
+
+    <p>
+      <%= t('mailer.new_promo.body_1',promo: @user.user_plan.plan.code).html_safe %>
+    </p>
+
+    <p>
+      <%= t('mailer.new_promo.body_2', promo: @user.user_plan.plan.code).html_safe %>
+    </p>
+
+
+    <p class="button-container"><%= link_to t('mailer.new_promo.account_btn'), new_profile_url %></p>
+
+    <p>
+      <%= t('mailer.new_creation.details_title').html_safe %> <br>
+      <%= t('mailer.new_creation.details_order_no', creationno: @user.user_plan[:order_number]).html_safe %> <br>
+      <%= t('mailer.new_creation.details_date').html_safe %><%= l(@user.user_plan[:payment_date])%> <br>
+      <%= t('mailer.new_creation.details_b_ip').html_safe %>
+    </p>
+
+    <p class="total_amount">
+      <%= t('mailer.new_creation.details_total_amount', creationamount: @user.user_plan[:paid]).html_safe %>
+    </p>
+
+    <p>
+      <%= t('mailer.confirmation_instructions.body_3').html_safe %>
+      <a class="link" href="https://www.artizyou.com/faq.html">www.artizyou.com/faq</a>
+    </p>
+
+    <p>
+      <%= t('mailer.new_promo.body_3').html_safe %>
+      <a href="mailto:contact@artizyou.com" class="link"><%= t('mailer.new_promo.footer_link') %></a><br><br>
+      <%= t('mailer.confirmation_instructions.salutations').html_safe %>
+    </p>
+
+    <p class="legend">
+      <%= t('mailer.new_promo.legend_bip').html_safe %>
+    </p>
+
+  </td>
+</tr>

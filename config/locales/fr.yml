@@ -1,0 +1,396 @@
+fr:
+  acknowledge: "J'ai compris"
+  action:
+    select: "Choisir"
+  boundary_error:
+    title: "Oups  ! Une erreur s’est produite"
+    text: "Le détail de l’erreur a été envoyé à notre équipe de support. Veuillez-nous excuser du désagrément."
+  menu:
+    add: "Ajouter une création"
+    list: "Mes créations"
+    edit_profile: "Mon profil"
+    signout: "Déconnexion"
+    faq: "FAQ"
+    helpdesk: bureau d'aide
+    username: "{username}"
+  user:
+    details:
+      subtext: "Complète ton profil pour gagner en visibilité"
+    profile_image:
+      label: "Ta photo"
+      change: "Modifier"
+    email: "Courriel"
+    username: "Nom d'utilisateur"
+    firstName: "Prénom"
+    lastName: "Nom"
+    fullname: "Nom"
+    activity: "Secteur d'activité"
+    activity_specification:
+      label: "Spécifiez (facultatif)"
+      placeholder: "ex: peinture impressionniste"
+      options:
+        admin: "Administration"
+        agriculture: "Agriculture"
+        architect_design: "Architecture et Design"
+        art_leasure: "Arts, spectacles et loisirs"
+        other_services: "Autres services (sauf les administrations publiques)"
+        beauty: "Beauté"
+        fabrication: "Fabrication"
+        finance: "Finance et assurances"
+        society_manage: "Gestion de sociétés et d’entreprises"
+        lodging_food: "Hébergement et services de restauration"
+        infos_ind: "Industrie de l’information"
+        cultural_ind: "Industrie culturelle"
+        admin_services_support: "Services administratifs, services de soutien, services de gestion des déchets et services d’assainissement"
+        teaching_services: "Services d’enseignement"
+        food_services: "Services de restauration"
+        real_estate_services: "Services immobiliers"
+        professional_scientific_services: "Services professionnels, scientifiques et techniques"
+        health_services: "Soins de santé"
+        moving_storage: "Transport et entreposage"
+    country: "Pays"
+    state:
+      label: "Provinces et territoires"
+      placeholder: "ex: Québec"
+      alberta: "Alberta"
+      british_columbia: "Colombie-Britannique"
+      manitoba: "Manitoba"
+      new_brunswick: "Nouveau-Brunswick"
+      newfoundland_labrador: "Terre-Neuve-et-Labrador"
+      northwest_territories: "Territoires du Nord-Ouest"
+      nova_scotia: "Nouvelle-Écosse"
+      nunavut: "Nunavut"
+      ontario: "Ontario"
+      prince_edward_island: "Île-du-Prince-Édouard"
+      quebec: "Québec"
+      saskatchewan: "Saskatchewan"
+      yukon_territory: "Yukon"
+    city:
+      label: "Ville (facultatif)"
+      placeholder: "ex: Montréal"
+    address:
+      label: "Adresse (facultatif)"
+      placeholder: "ex: 708 rue Cameron, Bureau 250 G1N 1N1"
+    description:
+      label: "Description (25000 caractères maximum, facultatif)"
+      placeholder: "Résumer en quelques lignes ton parcours, tes expériences ..."
+    language: "Langue de préférence"
+    ethereumWalletAddress: "Adresse du portefeuille Ethereum"
+    links:
+      subtitle: "Liens"
+      facebook: "Facebook (facultatif)"
+      twitter: "Twitter (facultatif)"
+      linkedin: "LinkedIn (facultatif)"
+      personal_website: "Site web personnel (facultatif)"
+      professional_website: "Site web professionnel (facultatif)"
+    public_url: "Adresse publique de ton profil"
+    terms_conditions: "Je certifie que les informations ci-dessus sont exactes, et que certaines informations ne pourront plus être modifiées par mesure de sécurité."
+  continue: "Continuer"
+  close: "Fermer"
+  save: "Sauvegarder"
+  skip: "Passer"
+  creations:
+    add: "Ajouter une création"
+    download_link: "Visualiser la création"
+    emptyCreationTitle: "Tu n'as aucune création pour le moment"
+    emptyCreationButton: "Ajouter la première création"
+    description: "Description"
+    materials: "Matériels utilisés"
+    name: "Nom de ta création"
+    creationDate: "Date de création"
+    yours: "Tes créations"
+    list:
+      registered: "Enregistrée"
+      not_registered: "Non enregistrée"
+      no_license: "Aucune licence"
+    new:
+      creation_user:
+        first_name: "Prénom"
+        last_name: "Nom de famille"
+        mail: "E-mail"
+        city: "Ville"
+        state: "État"
+        zip: "Zip code / Postal code"
+        address: "Adresse"
+        is_org: "Êtes-vous une organisation?"
+        org_name: "Nom de l'organisation"
+        save_button: "Enregistrer"
+      submenu:
+        kind: "Catégorie"
+        infos: "Informations"
+        type: "Type"
+        registration: "Enregistrement"
+      kind:
+        subtitle: "Choisis ta catégorie"
+        image: "Image a détecter"
+        text: "Texte"
+        art: "Oeuvre artistique"
+        digital: "Oeuvre digitale"
+        pre_patent_process: processus pré-brevet
+      infos:
+        pre_patent_small_description: "La description écrite doit être conforme à 35 U.S.C. §112 si le demandeur/utilisateur doit déposer une demande auprès de l'USPTO et d'autres juridictions."
+        small_description: "L'utilisateur doit écrire au moins trois phrases détaillant la création."
+        section_ident:
+          title: "Identification"
+          subtext: "Débute ta protection: prends soin de remplir l'ensemble des informations et ne néglige aucune partie."
+        section_file:
+          title_pdf: "Document PDF"
+          title_video: "Ajouter une vidéo"
+          title_any: "Ajouter le fichier"
+          title_audio: "Ajouter de l'audio"
+          subtext: "Taille du fichier limitée à 1 GB"
+          join_pdf: "Joindre un fichier PDF"
+          title_zip_ppt: "Document ZIP ou Powerpoint"
+          join_zip_ppt: "Joindre un fichier ZIP ou PowerPoint"
+          title_zip: "Document ZIP"
+          join_zip: "Joindre un fichier ZIP"
+          join_video: "Joindre un fichier vidéo"
+          join_any: "Joindre un fichier"
+          join_audio: "Joindre un fichier audio"
+        section_cover:
+          title: "Image de couverture"
+          subtext: Veuillez télécharger la première page de votre document au format PDF pour garantir le formatage...
+        section_image:
+          title: "Image a détecter"
+          prepatent_title: "Dessins de l'invention"
+          prepatent_subtext: "Téléchargez les dessins de l'invention"
+          subtext: "Taille du fichier limitée à 1 GB"
+        section_extract:
+          title: "Extrait de texte à détecter"
+          video_title: "Extrait de scénario à détecter"
+          audio_title: "Extrait de paroles à détecter"
+        section_categories:
+          title: "Catégories"
+          subtext: "3 choix maximum"
+        form:
+          author:
+            label: "Auteur"
+            placeholder: "Auteur de la création"
+            add_button: "Ajouter un auteur"
+            add_button_prepatent: "Ajouter des inventeurs"
+          brand_name:
+            label: "Marque"
+            placeholder: "Nom de ta marque"
+          first_market_use: "Première utilisation sur le marché"
+          operatingTerritories: "Territoires où tu es présentement en opérations. (Choisir ou saisir)"
+          publishedTerritories: "Territoires où tu es présentement publié. (Choisir ou saisir)"
+          publication_year: "Année de publication"
+          creation_title: "Titre de ta création"
+          creation_title_placeholder: "ex.: Véhicule électrique"
+          description:
+            pre_patent_label: "Description écrite de l'invention"
+            label: "Description (facultatif)"
+            placeholder: "ex.: Création d'une technologie innovante permettant de recharger le véhicule électrique sans devoir l'arrêter ni le connecter à un câblage traditionnel. Le concept consiste en un emetteur et un recepteur d'énergie..."
+          creation_date: "Date de création"
+          date_of_invention: "Date d'invention"
+          creation_materials:
+            label: "Matériels utilisés (facultatif)"
+            placeholder: "Veuillez décrire le matériel utilisé pour la réalisation de votre création."
+          upload:
+            title: "Dépose ton fichier"
+            small_text: "ou cliquer pour le sélectionner"
+          extract:
+            placeholder: ""
+          owner:
+            label: "Propriétaire"
+            placeholder: "Propriétaire de la création"
+            add_button: "Ajouter un propriétaire"
+          terms_conditions1: "J’atteste sur l’honneur que les informations saisies par mes soins sont exactes, authentiques et loyales et ne sont pas susceptibles de porter atteinte ou nuire autrement aux droits de tiers notamment sur leur propriété intellectuelle et leur savoir-faire."
+          terms_conditions2: "Je suis pleinement conscient, qu’après achat de la protection, mon document sera ancré ce qui signifie intégré dans la Blockchain et que les informations qui s’y rattachent ne pourront plus être modifiées à compter de cet ancrage."
+          cont_btn: "Continuer"
+          i_will_confirm: "Non, je vais vérifier"
+          yes_confirm: "Oui, j'ai confirmé et je continue"
+          first_confirmation_message: Veuillez lire attentivement votre description avant de cliquer sur "Continuer".
+          second_confirmation_message: Une fois que vous avez soumis, la description ne peut pas être changée ou modifiée.
+          published: "Est-ce que l'oeuvre a déjà été publiée?"
+          published_prepatent: "La propriété intellectuelle a-t-elle déjà été publiée ou en vente?"
+          publication_prepatent_date: Date de publication ou de vente
+      copyrights:
+        new: "NOUVELLE"
+        title: "Choisir la création à protéger"
+        subtext: "Choisis le type de création à protéger"
+        licenses: ""
+        tooltips:
+          label: "La protection offerte par l’enregistrement de vos droits d’auteurs avec ArtizYou"
+          text: "Dès lors que tu es en mesure de démontrer être le véritable propriétaire de tes droits d’auteurs, la fixation de l’œuvre sur un support, qu’il soit physique ou numérique, permettra de démontrer son existence et d’acquérir les droits d’auteur sur cette oeuvre, c’est-à-dire le droit exclusif, pour une personne, de produire ou de reproduire la totalité ou une partie importante d’une œuvre sous quelque forme qu’elle soit.Toutefois, bien que l’œuvre soit protégée dès sa création, la preuve de l’antériorité de sa création par l’auteur peut souvent s’avérer difficile, particulièrement au niveau numérique. C’est ici que la plateforme Artizyou te permet de créer en quelques clics une preuve d’antériorité de tes droits d’auteur via un enregistrement sur la Blockchain, à des coûts avantageux et sur un territoire international."
+      trademark:
+        tooltips:
+          label: "La protection offerte par l’enregistrement de ta marque de commerce avec ArtizYou"
+          text: "Les droits sur une marque de commerce s’acquièrent par son utilisation. C’est donc dire qu’il n’est pas nécessaire qu’une marque de commerce soit enregistrée auprès d’un organisme gouvernemental pour que soit conférée à son titulaire une certaine protection. Toutefois, cette protection requiert la preuve de ton utilisation antérieure de la marque de commerce, d’où l’importance de l’enregistrer avec ArtizYou dès que possible.Cette protection sera limitée au territoire sur lequel ta marque est réellement utilisée, et seulement pour les produits et services vendus sous cette marque de commerce. Nous te recommandons d’enregistrer une facture de ton entreprise pour chaque territoire que tu dessers."
+      registration:
+        title: "Enregistrement"
+        subtext: "***Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        creation_completed_no_bc: "Enregistré avec succès."
+        donate: "S'il vous plaît, faites un don"
+        creation_completed_first_message: "Félicitations, Artizyou a enregistré avec succès votre création."
+        creation_completed_second_message: "Vous pouvez vous attendre à ce que votre horodatage soit généré dans un délai moyen de 30 minutes."
+        creation_completed_with_code_first_message: "Félicitations, Artizyou a enregistré avec succès votre création."
+        creation_completed_with_code_second_message: "Vous pouvez vous attendre à ce que votre horodatage soit généré dans un délai moyen de 30 minutes."
+        payment_section:
+          plan_info: "Merci d'avoir choisi le plan '{name} incluant {limit} téléversements'. Une fois le paiement traité, vous pourrez procéder au téléchargement de vos créations."
+          promo: "Payer"
+          title: "Paiement"
+          subtext: "***Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          select_card: "Sélectionnez la carte pour payer"
+          pay_with_another: "Payer avec une autre carte"
+          options:
+            save_creation:
+              text: "Certificat de propriété intellectuelle Blockchain biP unique "
+              small_text: "Payer une seule fois"
+              certificate_amount_bip: "USD85"
+              certificate_amount_usc: "USD95"
+              plan_info: "Vous avez payé pour protéger {limit} création(s) - il vous en reste maintenant {left}."
+            copyright_certificate:
+              text: "Certificat de droit d'auteur américain unique"
+            not_now: "Pas maintenant"
+            not_now_warning_title: "Fais attention ! Ta création n'est pas protégée contre le plagiat et tu ne disposes d'aucune preuve légale pour te protéger en cas de plagiat."
+            not_now_warning_text: "Bénéficie d'une protection à vie grâce à la chaîne de blocs et à notre technologie d'alertes en cas de copie pour seulement 85,50 $ à vie, comprenant un e-certificat ainsi qu'un an d'alertes contre le plagiat."
+          credit_card_form:
+            card_holder: "Titulaire de la carte"
+            card_number: "Numéro de la carte"
+            expiry_date: "Expiration"
+            cvv: "CVV"
+            terms_conditions: "J’ai lu et j’accepte toutes les conditions énumérées aux "
+            terms_conditions_and: " et à la "
+            terms_conditions_link_legal: "Termes et conditions"
+            terms_conditions_link_policy: "Politique de Confidentialité"
+            terms_conditions_link_artizyou: " de ArtizYou."
+            encryption_terms: "Je reconnais que l’encryptage et l’horodatage dans la Blockchain ont un effet irréversible."
+            automatic_payment_terms: "Je reconnais que la présente entente se renouvellera automatiquement après 365 jours et que seul mon abonnement aux alertes au plagiat au coût de 4,50$ par mois sera prélevé directement sur la carte de crédit fournie lors de mon inscription et que je peux mettre fin à mon abonnement à tout moment."
+          button:
+            register: "Payer "
+            no_register: "Continuer sans enregistrement"
+            register_creation: "Enregistrer ma création"
+            your_creations: "Tes créations"
+    show:
+      optional: "optionnel"
+      detection: "Voir les {number} détections"
+      detections:
+        title: "{number} détection(s)"
+        label: "Détection"
+        no_detection: "Nous vous alertons dés que notre système aura repéré  l'existence d'un plagiat."
+        no_detection_until_registered: "La détection de plagiat se fera seulement à l'enregistrement de ta création."
+        snippet_not_applicable: "L'EXTRAIT NE PEUT ÊTRE AFFICHÉ"
+        previous_detections: "Anciennes détections:"
+        website_detected: "Site web:"
+        image_link: "Lien de l'image:"
+        delete:
+          title: "Veuillez confirmer"
+          label: "Êtes-vous sûr de vouloir retirer cette détection de plagiat?"
+          cancel: "Annuler"
+          confirm: "Confirmer"
+      catgory_link: "Modifier les catégories"
+      creation_date: "Date de création"
+      license: "Licence"
+      pending: "L'authentification de votre oeuvre doit être vérifié. Veuillez allouer un délai de 30 jours pour une confirmation officielle"
+      registry_date: "Année d'enregistrement"
+      registry_key: "Clé d'enregistrement"
+      proof_record: "Certificat d'enregistrement"
+      no_new_detection: "No new detection"
+      no_proof_record: "Ton certificat sera disponible aussitôt que tu auras enregistré ta création."
+      no_proof_record_until_blockchain: "Ton certificat sera disponible aussitôt que ta création sera enregistrée dans la Blockchain."
+      no_register_warning:
+        "Je suis pleinement conscient que mon document sera ancré ce qui signifie intégré dans la Blockchain et que les informations qui s’y rattachent ne pourront plus être modifiées à compter de cet ancrage.
+        J’atteste sur l’honneur que les informations saisies par mes soins sont exactes, authentiques et loyales et ne sont pas susceptibles de porter atteinte ou nuire autrement aux droits de tiers notamment sur leur propriété intellectuelle et leur savoir-faire."
+      no_register_button: "Enregistrer cette création"
+      modals:
+        art_kind_text: "Au Canada, il est possible de protéger tes créations artistiques comme les sculptures, dessins, ou autres objets. Toutefois, lorsque l’objet créé est fabriqué à plus de 50 exemplaires, seul l’enregistrement d’un dessin industriel peut en permettre la protection. Il est donc possible de fabriquer un pot décoratif en 10 exemplaires pour la vente et de détenir des droits d’auteurs sur ce pot. Toutefois, dans l’éventualité où tu procèdes à la vente de 100 pots décoratifs, tu perdras tout droit d’auteurs sur cette création en l’absence d’enregistrement d’un dessin industriel."
+        invention_kind_text: "Au Canada, et dans la plupart des pays au niveau international, une idée ou une invention ne peut être protégée autrement que par l’enregistrement d’un brevet et/ou d’un dessin industriel. L’enregistrement de ton idée sur la blockchain ne te procure aucune protection à l’encontre du plagiat par un tiers et devrait être utilisée par le créateur uniquement dans un objectif de compilation et de conservation de son innovation. Pour plus de détails sur la façon dont tu pourras protéger ton idée ou innovation, consulte notre FAQ."
+        image_industrial_text: "Au Canada, et dans la plupart des pays au niveau international, un dessin industriel ne peut être protégé autrement que par l’enregistrement du dessin auprès de l’organisme gouvernemental approprié. L’enregistrement de ton dessin industriel sur la blockchain ne te procure aucune protection à l’encontre du plagiat par un tiers et devrait être utilisée par le créateur uniquement dans un objectif de compilation et de conservation de ses dessins. Pour plus de détails sur la façon dont tu peux protéger ton idée ou innovation, consulte notre FAQ."
+      modal_categories_subtext: "Tu peux choisir de 1 à 3 catégories."
+      modal_detection_subtext:
+        "Attention, Artizyou a détecté {number} utilisation(s) de votre création.
+        Certains de ces utilisateurs sont peut-être légitimes, cependant, si ce n'est pas le cas, tu peux faire valoir tes droits en cliquant sur le bouton ci-dessous « Que faire en cas de plagiat? »."
+      modal_detection_btn: "Quoi faire en cas de plagiat ?"
+      modal_proof_record_subtext: "Créez un mot de passe pour protéger l'ouverture de ton PDF ou laisse ce champ vide si tu ne souhaites pas le protéger."
+      modal_no_detection: "Notre détecteur de plagiat n'a pas identifier de nouveau cas pour cette création. Si tu veux malgré tout en savoir plus, tu peux cliquer sur le bouton ci-dessous « Que faire en cas de plagiat? »."
+      modal_true_author_text: "Parfois, l’auteur n’est pas le véritable propriétaire de l’œuvre. Par exemple, lorsque ton employé a créé une œuvre à ta demande durant ses heures de travail, il existe une présomption légale que l’employeur est le véritable propriétaire de l’œuvre. Toutefois, il est très important de savoir que, lorsque l’auteur de l’œuvre est un sous-traitant ou un pigiste, les droits sur l’œuvre sont réputés lui appartenir et il est primordial qu’une entente de cession soit signée entre les parties pour t'assurer de détenir les droits sur l’œuvre. Communique avec ArtizYou ou consultez notre FAQ pour plus de détails."
+      pdf_password: "Mot de passe"
+      pdf_create_button: "Générer le certificat en PDF"
+      etherscan_link: "Informations de la transaction Etherscan"
+  license:
+    none: "Aucune licence"
+  onboarding:
+    slide1Title: "Protégez votre création à vie"
+    slide1Desc: "quelle que soit sa nature! "
+    slide2Title: "Retracez votre travail"
+    slide2Desc: "partout sur la toile grâce à nos alertes en temps réel!"
+    slide3Title: "Reconnaissance internationale"
+    slide3Desc: "garantie grâce à la technologie Blockchain"
+  payment:
+    card_owner: "Titulaire de la carte"
+    security_1: "Paiement sécurisé par"
+    security_2: "Aucune de ces données n’est conservée chez ArtizYou."
+    bill:
+      total: "Total"
+      sub_total: "Sous-Total"
+  profile:
+    create: "Votre profil"
+    edit: "Éditer votre profil"
+    public:
+      business_line_specification: "Spécialité"
+      description: "Description"
+      facebook: "Page Facebook"
+      twitter: "Page Twitter"
+      linkedin: "Page LinkedIn"
+      personal_website: "Site web personnel"
+      professional_website: "Site web professionnel"
+  footer:
+    terms: "Conditions d'utilisation"
+    legal: "Politique de confidentialité"
+  error_title: "Oups !"
+  error:
+    usernameExists: Ce nom d'utilisateur est déjà utilisé, merci d'en choisir un autre
+    firstMarketUseYearError: L'anné de première utilisation doit être après l'année de création
+    mandatory: Champ obligatoire
+    accept_profile_terms: Tu dois accepter cette déclaration
+    generic: Veuillez corriger les champs en erreur
+    rejected_file: "Le fichier n'a pas un format valide"
+    stripe: Veuillez corriger vos informations de carte de crédit
+  success_title: "Parfait !"
+  mailer:
+    notice: "Si tu as reçu ce courriel par erreur merci d'ignorer ce message."
+    no_reply_notice: "Ce courriel a été envoyé à partir d'une adresse de notification uniquement qui ne peut recevoir de courriels entrants. Veuillez ne pas répondre à ce message."
+    header:
+      subtitle: "La référence en propriété intellectuelle"
+    confirmation_instructions:
+      mail_object: "Bienvenue chez Artizyou – Confirmation d’inscription"
+      header:
+        title: "Bienvenue chez Artizyou"
+        subtitle: "Un simple clic pour confirmer votre compte !"
+      greeting: "Bonjour,<br>Nous te remercions de t'être inscrit(e) chez Artizyou."
+      body_1: "Tu peux dès maintenant commencer à défendre ta propriété intellectuelle."
+      body_2: "Tout d'abord, nous aurions besoin que tu confirmes la réception de ce courriel en cliquant sur le bouton ci-dessous:"
+      body_3: "Tu désires en apprendre plus sur la propriété intellectuelle : consulte notre FAQ rédigée par des experts et avocats spécialisés en P.I. : "
+      body_4: "N'hésite pas à communiquer avec nous en "
+      validate_btn: "Valide ton compte"
+      footer_link: "cliquant ici"
+      salutations: "À bientôt. <br>L'équipe Artizyou"
+    password_reset:
+      mail_object: "Artizyou – Réinitialisation de ton mot de passe"
+    new_creation:
+      mail_object: "Artizyou – Confirmation de commande"
+      mail_object_with_promo: "Artizyou – Ajout de votre création à la Blockchain"
+      header:
+        title: "Félicitation pour ton certificat b-IP©"
+        subtitle: "Ta commande est confirmée"
+      greeting: "Bonjour %{fullname},<br>"
+      body_1: "Nous confirmons ton achat de &#171; Certificat b-IP<sup>1</sup> : %{creationname} &#187;. Tu trouveras ta facture ci-dessous."
+      body_2: "<strong>IMPORTANT:</strong> Pour garder le contrôle sur ta propriété intellectuelle, nous te conseillons de visiter ton profile chaque semaine afin de vérifier le détecteur de plagiat et défendre tes doits en cas de copie."
+      account_btn: "Accède à ton compte"
+      details_title: "<strong>Détails de la commande</strong>"
+      details_order_no: "Commande # %{creationno}"
+      details_date: "Date de la commande "
+      details_total_amount: "<strong>Total de la commande: %{creationamount}$</strong>"
+      details_b_ip: "Protection d’une b-IP"
+      legend_bip: "<sup>1</sup>Blockchain Propriété Intellectuelle Certification Artizyou"
+  date:
+    formats:
+      default: "%d/%m/%Y"
+      short: "%e %b"
+      long: "%e %B %Y"
+  time:
+    formats:
+      default: "%d/%m/%Y"
+      short: "%e %b"
+      long: "%e %B %Y"

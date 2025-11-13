@@ -1,0 +1,20 @@
+<div class="col-lg-6">
+  <h2 class="devise-title"><%= t("devise.passwords.new.forgot_your_password") %></h2>
+
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    <%= devise_error_messages! %>
+
+    <div class="form-group has-float-label">
+      <%= f.email_field :email, autofocus: true, class:'form-control', placeholder:' ' %>
+      <%= f.label :email %>
+    </div>
+
+    <div class="actions text-center">
+      <%= f.submit t("devise.passwords.new.send_me_reset_password_instructions"), class:'btn btn-primary' %>
+    </div>
+  <% end %>
+
+  <div class="devise-links">
+    <%= render "devise/shared/links" %>
+  </div>
+</div>

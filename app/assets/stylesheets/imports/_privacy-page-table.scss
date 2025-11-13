@@ -1,0 +1,29 @@
+.table-container {
+  border: 1px solid black;
+  max-width: 700px;
+}
+.table-row-container {
+  display: flex;
+}
+.table-row-container:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+.table-column {
+  &-first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+  }
+  &-second {
+    border-left: 1px solid black;
+    width: 70%;
+    padding: 5px 10px;
+  }
+}
+.privacy-policy-subheading {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.4em;
+}

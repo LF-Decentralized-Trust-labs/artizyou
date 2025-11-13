@@ -1,0 +1,30 @@
+.choice{
+  $size: 50px;
+  $color: #797979;
+  position: relative;
+  margin: 0 0 2rem 0;
+  &>span{
+    position: relative;
+    display: block;
+    width: $size;
+    height: $size;
+    margin: 0 auto;
+    background: white;
+    border: solid 1px #d6d6d6;
+    border-radius: $size;
+    line-height: $size;
+    text-align: center;
+    z-index:10;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    height: 1px;
+    width: 90%;
+    margin-left: -45%;
+    background-color: #d6d6d6;
+    z-index:5;
+  }
+}

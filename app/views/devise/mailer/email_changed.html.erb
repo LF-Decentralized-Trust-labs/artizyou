@@ -1,0 +1,37 @@
+<tr class="header">
+  <td>
+    <a href="http://www.artizyou.com">
+      <%= image_tag("mail/logo_artizyou.png", class: "logo") %>
+      <span class="logo-subtitle"><%= t('mailer.header.subtitle').html_safe %></span>
+    </a>
+  </td>
+</tr>
+<tr>
+  <td>
+    <br>
+    <br>
+    <p>Hello <%= @email %>!</p>
+
+    <% if @resource.try(:unconfirmed_email?) %>
+      <p>We're contacting you to notify you that your email is being changed to <%= @resource.unconfirmed_email %>.</p>
+    <% else %>
+      <p>We're contacting you to notify you that your email has been changed to <%= @resource.email %>.</p>
+    <% end %>
+
+    <br>
+    <p>
+      <%= t('mailer.confirmation_instructions.body_3').html_safe %>
+      <a class="link" href="https://www.artizyou.com/faq.html">www.artizyou.com/faq</a>
+    </p>
+
+    <p>
+      <%= t('mailer.confirmation_instructions.body_4').html_safe %>
+      <a href="mailto:contact@artizyou.com" class="link"><%= t('mailer.confirmation_instructions.footer_link') %></a><br><br>
+      <%= t('mailer.confirmation_instructions.salutations').html_safe %>
+    </p>
+  </td>
+</tr>
+
+
+
+
